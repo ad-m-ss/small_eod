@@ -78,7 +78,7 @@ jobs:
       run: make push_backend
       if: github.ref == 'refs/heads/dev'
     - name: Trigger SDK regenerate
-      uses: peter-evans/repository-dispatch@ce5485de42c9b2622d2ed064be479e8ed65e76f4 # renovate: tag=v1
+      uses: peter-evans/repository-dispatch@11ba7d3f32dc7cc919d1c43f1fec1c05260c26b5 # tag=v2
       if: github.ref == 'refs/heads/dev'
       with:
         token: ${{ secrets.SDK_REPO_TOKEN }}
